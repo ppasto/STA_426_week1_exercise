@@ -1,0 +1,35 @@
+---
+title: "Exercise 1"
+format: html
+editor: visual
+---
+
+## Sample Data
+
+We first create an x vector sampling 100 values from a log-normal distribution of mean 5 and standard deviation 0.5.
+
+```{r}
+n=100
+x=rlnorm(n, 5,0.5)
+```
+
+## Visualize Data
+
+We visualize our data plotting first the histograms for both the linear and the log scales.
+
+```{r}
+library(ggplot2)
+par(mfrow=c(1,2))
+hist(x)
+hist(log(x))
+```
+
+We finally visualize the output with a violin plot
+
+```{r}
+n=100
+data=data.frame(name=c(rep('A', n)),value=rlnorm(n, 5,0.5))
+
+p <- ggplot(data, aes(x=name, y=value, fill=name)) 
+p+geom_violin()
+```
