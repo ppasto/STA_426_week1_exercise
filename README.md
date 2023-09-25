@@ -3,7 +3,6 @@
 
 https://github.com
 
-![alt text](https://github.com/[ppasto]/[STA_426_week1_exercise]/blob/[branch]/image)
 
 
-
+[](https://github.com/ppasto/STA_426_week1_exercise/issues/1)https://github.com/ppasto/STA_426_week1_exercise/issues/1
