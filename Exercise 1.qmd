@@ -9,13 +9,14 @@ editor: visual
 We first create an x vector sampling 100 values from a log-normal distribution of mean 5 and standard deviation 0.5.
 
 ```{r}
+set.seed(1)
 n=100
 x=rlnorm(n, 5,0.5)
 ```
 
 ## Visualize Data
 
-We visualize our data plotting first the histograms for both the linear and the log scales.
+We visualize our data with mean `r mean(x)`  and variance `r var(x)` plotting first the histograms for both the linear and the log scales.
 
 ```{r}
 library(ggplot2)
